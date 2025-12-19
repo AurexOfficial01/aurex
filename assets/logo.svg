@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <defs>
+        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#C9A24D;stop-opacity:1" />
+            <stop offset="50%" style="stop-color:#D4AF37;stop-opacity:1" />
+            <stop offset="100%" style="stop-color:#E5C158;stop-opacity:1" />
+        </linearGradient>
+        <linearGradient id="goldGradientLight" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#C9A24D;stop-opacity:0.5" />
+            <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:0.5" />
+        </linearGradient>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#C9A24D" flood-opacity="0.4"/>
+            <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#D4AF37" flood-opacity="0.2"/>
+        </filter>
+        <filter id="glow">
+            <feGaussianBlur stdDeviation="2" result="blur"/>
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    
+    <!-- Outer Ring with 3D Effect -->
+    <circle cx="50" cy="50" r="45" fill="none" stroke="url(#goldGradientLight)" stroke-width="1.5" opacity="0.3"/>
+    <circle cx="50" cy="50" r="42" fill="none" stroke="url(#goldGradient)" stroke-width="3" filter="url(#shadow)"/>
+    
+    <!-- Diamond Shape with 3D Effect -->
+    <path d="M 50,20 L 62,35 L 80,38 L 65,53 L 68,70 L 50,60 L 32,70 L 35,53 L 20,38 L 38,35 Z" 
+          fill="url(#goldGradient)" 
+          stroke="url(#goldGradient)" 
+          stroke-width="2" 
+          stroke-linejoin="round"
+          filter="url(#glow)"/>
+    
+    <!-- Inner Geometric Pattern -->
+    <path d="M 50,40 L 58,45 L 58,55 L 50,60 L 42,55 L 42,45 Z" 
+          fill="none" 
+          stroke="url(#goldGradient)" 
+          stroke-width="2" 
+          stroke-linejoin="round"/>
+    
+    <!-- Central Circle with Depth -->
+    <circle cx="50" cy="50" r="8" fill="url(#goldGradient)" stroke="#FFFFFF" stroke-width="0.5" opacity="0.8"/>
+    
+    <!-- Shine Effects -->
+    <path d="M 45,25 L 55,25 L 50,15 Z" fill="#FFFFFF" opacity="0.3"/>
+    <circle cx="50" cy="50" r="3" fill="#FFFFFF" opacity="0.5"/>
+    
+    <!-- Reflective Highlights -->
+    <path d="M 35,40 Q 40,35 45,40" fill="none" stroke="#FFFFFF" stroke-width="0.5" opacity="0.4"/>
+    <path d="M 55,40 Q 60,35 65,40" fill="none" stroke="#FFFFFF" stroke-width="0.5" opacity="0.4"/>
+</svg>
