@@ -6,7 +6,7 @@
     <title>AUREX | Forged in Digital Gold</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 </head>
@@ -15,7 +15,9 @@
     <nav class="navbar">
         <div class="container">
             <a href="#" class="logo">
-                <img src="assets/logo.svg" alt="AUREX Logo">
+                <div class="logo-icon">
+                    <img src="assets/logo.svg" alt="AUREX Logo">
+                </div>
                 <span>AUREX</span>
             </a>
             <div class="nav-links">
@@ -35,12 +37,28 @@
 
     <!-- Hero Section -->
     <section class="hero">
+        <div class="hero-background">
+            <div class="gold-particle" style="top: 20%; left: 10%;"></div>
+            <div class="gold-particle" style="top: 60%; left: 85%;"></div>
+            <div class="gold-particle" style="top: 80%; left: 15%;"></div>
+            <div class="gold-particle" style="top: 30%; left: 90%;"></div>
+        </div>
         <div class="container">
             <div class="hero-content">
-                <img src="assets/logo.svg" alt="AUREX Logo" class="hero-logo">
+                <div class="logo-3d-container">
+                    <div class="logo-3d">
+                        <img src="assets/logo.svg" alt="AUREX Logo" class="logo-main">
+                        <div class="logo-glow"></div>
+                        <div class="logo-reflection"></div>
+                    </div>
+                </div>
                 <h1 class="hero-title">AUREX</h1>
                 <p class="hero-tagline">Forged in Digital Gold</p>
                 <p class="hero-philosophy">Digital scarcity meets timeless value</p>
+                <div class="hero-cta">
+                    <a href="#tokenomics" class="btn-primary">Explore Tokenomics</a>
+                    <a href="#transparency" class="btn-secondary">Read Disclaimer</a>
+                </div>
                 <div class="scroll-indicator">
                     <div class="scroll-line"></div>
                 </div>
@@ -52,14 +70,19 @@
     <section id="philosophy" class="section philosophy">
         <div class="container">
             <div class="section-header">
-                <h2>Philosophy</h2>
+                <h2><span class="section-number">01</span>Philosophy</h2>
                 <div class="section-line"></div>
             </div>
             <div class="philosophy-content">
-                <div class="philosophy-text">
-                    <p>Inspired by gold's historical role as a store of value, AUREX embodies the principles of scarcity, durability, and timeless worth in the digital realm.</p>
-                    <p>We recognize gold's millennia-long journey from physical commodity to monetary standard. While not claiming any backing or returns, we draw inspiration from its inherent qualities to create a digital asset with intentional design.</p>
-                    <p>The project represents a thoughtful approach to digital value, focusing on sustainable architecture and long-term viability.</p>
+                <div class="philosophy-card">
+                    <div class="card-3d">
+                        <div class="card-content">
+                            <p>Inspired by gold's historical role as a store of value, AUREX embodies the principles of scarcity, durability, and timeless worth in the digital realm.</p>
+                            <p>We recognize gold's millennia-long journey from physical commodity to monetary standard. While not claiming any backing or returns, we draw inspiration from its inherent qualities to create a digital asset with intentional design.</p>
+                            <p>The project represents a thoughtful approach to digital value, focusing on sustainable architecture and long-term viability.</p>
+                        </div>
+                        <div class="card-glow"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -67,60 +90,73 @@
 
     <!-- Tokenomics Section -->
     <section id="tokenomics" class="section tokenomics">
+        <div class="section-bg-text">TOKENOMICS</div>
         <div class="container">
             <div class="section-header">
-                <h2>Tokenomics</h2>
+                <h2><span class="section-number">02</span>Tokenomics</h2>
                 <div class="section-line"></div>
             </div>
             <div class="tokenomics-grid">
-                <div class="tokenomics-card">
-                    <div class="tokenomics-number">1,000,000,000</div>
-                    <h3>Total Supply</h3>
-                    <p>Fixed supply of AURX tokens</p>
+                <div class="tokenomics-card card-3d">
+                    <div class="card-content">
+                        <div class="tokenomics-number">1,000,000,000</div>
+                        <h3>Total Supply</h3>
+                        <p>Fixed supply of AURX tokens</p>
+                    </div>
+                    <div class="card-glow"></div>
                 </div>
                 
-                <div class="distribution">
-                    <h3>Distribution</h3>
-                    <div class="distribution-item">
-                        <span class="distribution-label">Liquidity</span>
-                        <div class="distribution-bar">
-                            <div class="distribution-fill" style="width: 80%" data-percent="80%"></div>
+                <div class="distribution card-3d">
+                    <div class="card-content">
+                        <h3>Distribution</h3>
+                        <div class="distribution-item">
+                            <span class="distribution-label">Liquidity</span>
+                            <div class="distribution-bar">
+                                <div class="distribution-fill" style="width: 0%" data-percent="80%"></div>
+                            </div>
+                            <span class="distribution-percent">80%</span>
                         </div>
-                        <span class="distribution-percent">80%</span>
-                    </div>
-                    <div class="distribution-item">
-                        <span class="distribution-label">Community</span>
-                        <div class="distribution-bar">
-                            <div class="distribution-fill" style="width: 10%" data-percent="10%"></div>
+                        <div class="distribution-item">
+                            <span class="distribution-label">Community</span>
+                            <div class="distribution-bar">
+                                <div class="distribution-fill" style="width: 0%" data-percent="10%"></div>
+                            </div>
+                            <span class="distribution-percent">10%</span>
                         </div>
-                        <span class="distribution-percent">10%</span>
-                    </div>
-                    <div class="distribution-item">
-                        <span class="distribution-label">Team (Vested)</span>
-                        <div class="distribution-bar">
-                            <div class="distribution-fill" style="width: 7%" data-percent="7%"></div>
+                        <div class="distribution-item">
+                            <span class="distribution-label">Team (Vested)</span>
+                            <div class="distribution-bar">
+                                <div class="distribution-fill" style="width: 0%" data-percent="7%"></div>
+                            </div>
+                            <span class="distribution-percent">7%</span>
                         </div>
-                        <span class="distribution-percent">7%</span>
-                    </div>
-                    <div class="distribution-item">
-                        <span class="distribution-label">Reserve</span>
-                        <div class="distribution-bar">
-                            <div class="distribution-fill" style="width: 3%" data-percent="3%"></div>
+                        <div class="distribution-item">
+                            <span class="distribution-label">Reserve</span>
+                            <div class="distribution-bar">
+                                <div class="distribution-fill" style="width: 0%" data-percent="3%"></div>
+                            </div>
+                            <span class="distribution-percent">3%</span>
                         </div>
-                        <span class="distribution-percent">3%</span>
                     </div>
+                    <div class="card-glow"></div>
                 </div>
                 
                 <div class="features">
-                    <div class="feature">
-                        <h3>Transaction Tax</h3>
-                        <p class="feature-value">0%</p>
-                        <p>No buy/sell taxes</p>
+                    <div class="feature card-3d">
+                        <div class="card-content">
+                            <h3>Transaction Tax</h3>
+                            <p class="feature-value">0%</p>
+                            <p>No buy/sell taxes</p>
+                        </div>
+                        <div class="card-glow"></div>
                     </div>
-                    <div class="feature">
-                        <h3>Contract</h3>
-                        <p class="feature-value">Renounced</p>
-                        <p>Full decentralization</p>
+                    <div class="feature card-3d">
+                        <div class="card-content">
+                            <h3>Contract</h3>
+                            <p class="feature-value">Renounced</p>
+                            <p>Full decentralization</p>
+                        </div>
+                        <div class="card-glow"></div>
                     </div>
                 </div>
             </div>
@@ -131,14 +167,17 @@
     <section id="story" class="section story">
         <div class="container">
             <div class="section-header">
-                <h2>Brand Story</h2>
+                <h2><span class="section-number">03</span>Brand Story</h2>
                 <div class="section-line"></div>
             </div>
             <div class="story-content">
-                <div class="story-text">
-                    <p>AUREX represents a departure from the transient nature of many digital assets. Our approach is rooted in minimalism, intentional design, and long-term thinking.</p>
-                    <p>In a landscape often dominated by hype, we choose subtlety. Where complexity is common, we seek simplicity. The project's aesthetic and architecture reflect this philosophy—clean, purpose-built, and enduring.</p>
-                    <p>Every design decision, from token distribution to visual identity, serves the core principle: create something that stands the test of time, not just the test of the market.</p>
+                <div class="story-card card-3d">
+                    <div class="card-content">
+                        <p>AUREX represents a departure from the transient nature of many digital assets. Our approach is rooted in minimalism, intentional design, and long-term thinking.</p>
+                        <p>In a landscape often dominated by hype, we choose subtlety. Where complexity is common, we seek simplicity. The project's aesthetic and architecture reflect this philosophy—clean, purpose-built, and enduring.</p>
+                        <p>Every design decision, from token distribution to visual identity, serves the core principle: create something that stands the test of time, not just the test of the market.</p>
+                    </div>
+                    <div class="card-glow"></div>
                 </div>
             </div>
         </div>
@@ -146,41 +185,51 @@
 
     <!-- Roadmap Section -->
     <section id="roadmap" class="section roadmap">
+        <div class="section-bg-text">ROADMAP</div>
         <div class="container">
             <div class="section-header">
-                <h2>Roadmap</h2>
+                <h2><span class="section-number">04</span>Roadmap</h2>
                 <div class="section-line"></div>
             </div>
             <div class="roadmap-timeline">
-                <div class="timeline-item">
-                    <div class="timeline-phase">Phase 01</div>
-                    <h3>Foundation</h3>
-                    <ul>
-                        <li>Smart contract development</li>
-                        <li>Tokenomics finalization</li>
-                        <li>Security audits</li>
-                        <li>Initial liquidity provision</li>
-                    </ul>
+                <div class="timeline-item card-3d">
+                    <div class="card-content">
+                        <div class="timeline-phase">Phase 01</div>
+                        <h3>Foundation</h3>
+                        <ul>
+                            <li>Smart contract development</li>
+                            <li>Tokenomics finalization</li>
+                            <li>Security audits</li>
+                            <li>Initial liquidity provision</li>
+                        </ul>
+                    </div>
+                    <div class="card-glow"></div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-phase">Phase 02</div>
-                    <h3>Launch</h3>
-                    <ul>
-                        <li>Community deployment</li>
-                        <li>Contract renouncement</li>
-                        <li>Initial distribution</li>
-                        <li>Documentation release</li>
-                    </ul>
+                <div class="timeline-item card-3d">
+                    <div class="card-content">
+                        <div class="timeline-phase">Phase 02</div>
+                        <h3>Launch</h3>
+                        <ul>
+                            <li>Community deployment</li>
+                            <li>Contract renouncement</li>
+                            <li>Initial distribution</li>
+                            <li>Documentation release</li>
+                        </ul>
+                    </div>
+                    <div class="card-glow"></div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-phase">Phase 03</div>
-                    <h3>Community</h3>
-                    <ul>
-                        <li>Governance framework</li>
-                        <li>Ecosystem development</li>
-                        <li>Strategic partnerships</li>
-                        <li>Sustainable growth</li>
-                    </ul>
+                <div class="timeline-item card-3d">
+                    <div class="card-content">
+                        <div class="timeline-phase">Phase 03</div>
+                        <h3>Community</h3>
+                        <ul>
+                            <li>Governance framework</li>
+                            <li>Ecosystem development</li>
+                            <li>Strategic partnerships</li>
+                            <li>Sustainable growth</li>
+                        </ul>
+                    </div>
+                    <div class="card-glow"></div>
                 </div>
             </div>
         </div>
@@ -190,16 +239,19 @@
     <section id="transparency" class="section transparency">
         <div class="container">
             <div class="section-header">
-                <h2>Transparency</h2>
+                <h2><span class="section-number">05</span>Transparency</h2>
                 <div class="section-line"></div>
             </div>
             <div class="transparency-content">
-                <div class="disclaimer">
-                    <h3>Important Disclaimer</h3>
-                    <p>AUREX is a digital asset project exploring the principles of digital scarcity and value. It is not an investment product, security, or financial instrument.</p>
-                    <p>The project makes no promises of returns, profits, or price appreciation. Digital assets are inherently volatile and carry significant risk.</p>
-                    <p>Participants should conduct their own research and only engage with funds they can afford to lose. The AUREX team provides no financial advice.</p>
-                    <p>All code is open-source and available for public review. Tokenomics are fixed at deployment and cannot be altered.</p>
+                <div class="disclaimer card-3d">
+                    <div class="card-content">
+                        <h3>Important Disclaimer</h3>
+                        <p>AUREX is a digital asset project exploring the principles of digital scarcity and value. It is not an investment product, security, or financial instrument.</p>
+                        <p>The project makes no promises of returns, profits, or price appreciation. Digital assets are inherently volatile and carry significant risk.</p>
+                        <p>Participants should conduct their own research and only engage with funds they can afford to lose. The AUREX team provides no financial advice.</p>
+                        <p>All code is open-source and available for public review. Tokenomics are fixed at deployment and cannot be altered.</p>
+                    </div>
+                    <div class="card-glow"></div>
                 </div>
             </div>
         </div>
@@ -210,7 +262,9 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="assets/logo.svg" alt="AUREX Logo">
+                    <div class="logo-icon">
+                        <img src="assets/logo.svg" alt="AUREX Logo">
+                    </div>
                     <div>
                         <h3>AUREX</h3>
                         <p>Forged in Digital Gold</p>
@@ -224,10 +278,21 @@
                     <a href="#transparency">Transparency</a>
                 </div>
                 <div class="social-links">
-                    <a href="#" aria-label="Twitter">TW</a>
-                    <a href="#" aria-label="Telegram">TG</a>
-                    <a href="#" aria-label="GitHub">GH</a>
-                    <a href="#" aria-label="Discord">DC</a>
+                    <a href="https://x.com/AUREX860336" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="Telegram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.06-.2-.07-.06-.17-.04-.24-.02-.1.02-1.79 1.14-5.06 3.35-.48.33-.91.49-1.3.48-.43-.01-1.25-.24-1.86-.44-.75-.24-1.35-.37-1.29-.78.03-.2.4-.41 1.1-.62 4.31-1.39 7.2-2.31 8.66-2.77 4.05-1.61 4.89-1.89 5.44-1.9.12 0 .38.03.55.18.14.13.18.3.2.45 0 .14.03.43.03.93 0 .5-.03.93-.03.93z"/>
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.42 22 12c0-5.523-4.477-10-10-10z"/>
+                        </svg>
+                    </a>
                 </div>
             </div>
             <div class="footer-disclaimer">
