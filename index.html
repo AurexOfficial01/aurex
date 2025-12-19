@@ -1,87 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>AUREX — Forged in Digital Gold</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      font-family: Inter, Arial, sans-serif;
-      background: #0B0E11;
-      color: #F5F6F7;
-      text-align: center;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 60px 20px;
-    }
-    h1 {
-      font-size: 48px;
-      color: #C9A24D;
-      margin-bottom: 10px;
-    }
-    h2 {
-      font-weight: 400;
-      color: #aaa;
-      margin-bottom: 40px;
-    }
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      color: #ccc;
-    }
-    .box {
-      border: 1px solid #2A2E35;
-      padding: 20px;
-      margin-top: 40px;
-    }
-    footer {
-      margin-top: 60px;
-      font-size: 14px;
-      color: #777;
-    }
-    a {
-      color: #C9A24D;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUREX | Forged in Digital Gold</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 </head>
 <body>
-  <div class="container">
-    <h1>AUREX</h1>
-    <h2>Forged in Digital Gold.</h2>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/logo.svg" alt="AUREX Logo">
+                <span>AUREX</span>
+            </a>
+            <div class="nav-links">
+                <a href="#philosophy">Philosophy</a>
+                <a href="#tokenomics">Tokenomics</a>
+                <a href="#story">Story</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="#transparency">Transparency</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
 
-    <p>
-      AUREX is a community-driven digital token inspired by the timeless idea of gold,
-      reimagined for the digital era.
-    </p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="assets/logo.svg" alt="AUREX Logo" class="hero-logo">
+                <h1 class="hero-title">AUREX</h1>
+                <p class="hero-tagline">Forged in Digital Gold</p>
+                <p class="hero-philosophy">Digital scarcity meets timeless value</p>
+                <div class="scroll-indicator">
+                    <div class="scroll-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="box">
-      <h3>Tokenomics</h3>
-      <p>
-        Total Supply: 1,000,000,000 AURX<br>
-        Liquidity: 80%<br>
-        Community: 10%<br>
-        Team: 7% (Vested)<br>
-        Reserve: 3%<br>
-        Taxes: None
-      </p>
-    </div>
+    <!-- Philosophy Section -->
+    <section id="philosophy" class="section philosophy">
+        <div class="container">
+            <div class="section-header">
+                <h2>Philosophy</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="philosophy-content">
+                <div class="philosophy-text">
+                    <p>Inspired by gold's historical role as a store of value, AUREX embodies the principles of scarcity, durability, and timeless worth in the digital realm.</p>
+                    <p>We recognize gold's millennia-long journey from physical commodity to monetary standard. While not claiming any backing or returns, we draw inspiration from its inherent qualities to create a digital asset with intentional design.</p>
+                    <p>The project represents a thoughtful approach to digital value, focusing on sustainable architecture and long-term viability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="box">
-      <h3>Transparency</h3>
-      <p>
-        No promises. No artificial hype.<br>
-        AUREX is an open experiment shaped by its community.
-      </p>
-    </div>
+    <!-- Tokenomics Section -->
+    <section id="tokenomics" class="section tokenomics">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tokenomics</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="tokenomics-grid">
+                <div class="tokenomics-card">
+                    <div class="tokenomics-number">1,000,000,000</div>
+                    <h3>Total Supply</h3>
+                    <p>Fixed supply of AURX tokens</p>
+                </div>
+                
+                <div class="distribution">
+                    <h3>Distribution</h3>
+                    <div class="distribution-item">
+                        <span class="distribution-label">Liquidity</span>
+                        <div class="distribution-bar">
+                            <div class="distribution-fill" style="width: 80%" data-percent="80%"></div>
+                        </div>
+                        <span class="distribution-percent">80%</span>
+                    </div>
+                    <div class="distribution-item">
+                        <span class="distribution-label">Community</span>
+                        <div class="distribution-bar">
+                            <div class="distribution-fill" style="width: 10%" data-percent="10%"></div>
+                        </div>
+                        <span class="distribution-percent">10%</span>
+                    </div>
+                    <div class="distribution-item">
+                        <span class="distribution-label">Team (Vested)</span>
+                        <div class="distribution-bar">
+                            <div class="distribution-fill" style="width: 7%" data-percent="7%"></div>
+                        </div>
+                        <span class="distribution-percent">7%</span>
+                    </div>
+                    <div class="distribution-item">
+                        <span class="distribution-label">Reserve</span>
+                        <div class="distribution-bar">
+                            <div class="distribution-fill" style="width: 3%" data-percent="3%"></div>
+                        </div>
+                        <span class="distribution-percent">3%</span>
+                    </div>
+                </div>
+                
+                <div class="features">
+                    <div class="feature">
+                        <h3>Transaction Tax</h3>
+                        <p class="feature-value">0%</p>
+                        <p>No buy/sell taxes</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Contract</h3>
+                        <p class="feature-value">Renounced</p>
+                        <p>Full decentralization</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-      © AUREX — Community Project<br>
-      This is not financial advice.
+    <!-- Brand Story Section -->
+    <section id="story" class="section story">
+        <div class="container">
+            <div class="section-header">
+                <h2>Brand Story</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="story-content">
+                <div class="story-text">
+                    <p>AUREX represents a departure from the transient nature of many digital assets. Our approach is rooted in minimalism, intentional design, and long-term thinking.</p>
+                    <p>In a landscape often dominated by hype, we choose subtlety. Where complexity is common, we seek simplicity. The project's aesthetic and architecture reflect this philosophy—clean, purpose-built, and enduring.</p>
+                    <p>Every design decision, from token distribution to visual identity, serves the core principle: create something that stands the test of time, not just the test of the market.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="section roadmap">
+        <div class="container">
+            <div class="section-header">
+                <h2>Roadmap</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="roadmap-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-phase">Phase 01</div>
+                    <h3>Foundation</h3>
+                    <ul>
+                        <li>Smart contract development</li>
+                        <li>Tokenomics finalization</li>
+                        <li>Security audits</li>
+                        <li>Initial liquidity provision</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-phase">Phase 02</div>
+                    <h3>Launch</h3>
+                    <ul>
+                        <li>Community deployment</li>
+                        <li>Contract renouncement</li>
+                        <li>Initial distribution</li>
+                        <li>Documentation release</li>
+                    </ul>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-phase">Phase 03</div>
+                    <h3>Community</h3>
+                    <ul>
+                        <li>Governance framework</li>
+                        <li>Ecosystem development</li>
+                        <li>Strategic partnerships</li>
+                        <li>Sustainable growth</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Transparency Section -->
+    <section id="transparency" class="section transparency">
+        <div class="container">
+            <div class="section-header">
+                <h2>Transparency</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="transparency-content">
+                <div class="disclaimer">
+                    <h3>Important Disclaimer</h3>
+                    <p>AUREX is a digital asset project exploring the principles of digital scarcity and value. It is not an investment product, security, or financial instrument.</p>
+                    <p>The project makes no promises of returns, profits, or price appreciation. Digital assets are inherently volatile and carry significant risk.</p>
+                    <p>Participants should conduct their own research and only engage with funds they can afford to lose. The AUREX team provides no financial advice.</p>
+                    <p>All code is open-source and available for public review. Tokenomics are fixed at deployment and cannot be altered.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="assets/logo.svg" alt="AUREX Logo">
+                    <div>
+                        <h3>AUREX</h3>
+                        <p>Forged in Digital Gold</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <a href="#philosophy">Philosophy</a>
+                    <a href="#tokenomics">Tokenomics</a>
+                    <a href="#story">Story</a>
+                    <a href="#roadmap">Roadmap</a>
+                    <a href="#transparency">Transparency</a>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter">TW</a>
+                    <a href="#" aria-label="Telegram">TG</a>
+                    <a href="#" aria-label="GitHub">GH</a>
+                    <a href="#" aria-label="Discord">DC</a>
+                </div>
+            </div>
+            <div class="footer-disclaimer">
+                <p>© 2024 AUREX. All information provided for educational purposes. Cryptocurrencies are volatile assets. Always do your own research.</p>
+            </div>
+        </div>
     </footer>
-  </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
